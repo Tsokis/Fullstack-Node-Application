@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>JS Axios</title>
+    
+</head>
+
+<body>
+    <h1>Testing</h1>
+    <div class="output">   
+    <h3>Name Output</h3> 
+    </div><br>
+    <div class="username">
+        <h3>UserName Output</h3>
+    </div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+axios.get('http://jsonplaceholder.typicode.com/users')
+        .then(function (response) {
+            const output = document.querySelector('.output');    
+            const usernameOtp = document.querySelector('.username');
+                //console.log(response.data);
+                console.log(response);                
+                let target = response.data;              
+                responseJson = JSON.stringify(target);    
+                console.log(responseJson);   
+               for (i=0; i<=target.length; i++){
+                   let names = target[i].name;
+                   let username = target[i].username;
+                   output.innerHTML += names;
+                   usernameOtp.innerHTML +=username.split("-");
+               }               
+            })
+            .catch(function (error) {
+        console.log(error);
+    });
+ </script>
+ </body>    
+</html>
