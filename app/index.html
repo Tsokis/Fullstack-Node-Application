@@ -22,7 +22,7 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 axios.get('http://jsonplaceholder.typicode.com/users')
-        .then(function (response) {
+        .then( response => {
             const output = document.querySelector('.output');    
             const usernameOtp = document.querySelector('.username');
                 //console.log(response.data);
@@ -34,10 +34,10 @@ axios.get('http://jsonplaceholder.typicode.com/users')
                    let names = target[i].name;
                    let username = target[i].username;
                    output.innerHTML += names;
-                   usernameOtp.innerHTML +=username.split("-");
+                   usernameOtp.innerHTML +=username;
                }               
             })
-            .catch(function (error) {
+            .catch(error => {
         console.log(error);
     });
  </script>
