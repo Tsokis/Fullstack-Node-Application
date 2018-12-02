@@ -8,9 +8,9 @@ app.set('view engine','ejs');
 //setting up views folder
 app.set('views', 'views');
 //use test route
-app.use(require('./routes/test'));
+app.use(require('./routes/about'));
 // link to public folder
-app.use(express.static('./app/public'));
+app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({
     extended: false
 }))
