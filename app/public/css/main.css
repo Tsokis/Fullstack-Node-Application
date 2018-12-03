@@ -33,6 +33,24 @@ body {
 .main-nav .bar {
     display: none;
 }
+/** footer style **/
+.footer {
+    background-color: grey;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: -1px;
+    left: 0px;
+}
+/** home header section style **/
+.header {
+    margin: 7px 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
 
 /** Media queries **/
 /* navigation responsiveness*/
