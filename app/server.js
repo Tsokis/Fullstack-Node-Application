@@ -10,6 +10,7 @@ app.set('views', 'views');
 //use test route
 app.use(require('./routes/about'));
 app.use(require('./routes/home'));
+app.use(require('./routes/weather'));
 // link to public folder
 app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({
