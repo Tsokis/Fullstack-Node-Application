@@ -1,6 +1,10 @@
 body {
     background-color: #f2f2f2;
 }
+.container {
+    margin: 0px !important;
+    padding: 0px !important;
+}
 
 /**
     navigation menu style
@@ -11,8 +15,7 @@ body {
     position: fixed;
     width: 100%;
     left:0px;
-    top:0px;
-    
+    top:0px;    
 }
 
 .main-nav a {
@@ -41,19 +44,100 @@ body {
 .footer {
     background-color: grey;
     width: 100%;
-    padding: 1rem;
+    padding: 0.7rem;
     text-align: center;
     color: white;
     font-size: 1.3rem;
-    position: fixed;
+    margin-top: 50px;
+    /* position: fixed;
     bottom: -1px;
-    left: 0px;
+    left: 0px; */
 }
+
 /** home header section style **/
 .header {
     margin: 7px 5px;
     text-align: center;
     font-size: 1.1rem;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../imgs/coffee1.jpeg");
+    /* Set a specific height */
+    height: 100vh;
+    width: 100% !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    left: 0px;
+    right: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.static {
+     background-color: #333;
+     box-sizing: border-box;
+     width: 100%;
+     height: 100px;
+     /* margin-bottom: 80px; */
+     padding: 0px;     
+     color: white;
+     /* border: 10px solid blue; */
+}
+
+/** about section style **/
+.about {
+    text-align: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.test {
+    background-color: #4CAF50;
+}
+
+/* .item-1 {
+    grid-column: 2;
+    grid-row: 1;
+} */
+
+/* Weather page styles */
+.icon {
+    width: 15%;
+}
+.weatherCard {
+    margin-left:50px;
+    text-align: center;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.weatherCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.t {
+    box-sizing: border-box; 
+}
+
+/* Google Map */
+#map {
+    height: 400px;
+    width: 50%;
+}
+/* js class */
+.object {
+    list-style-type: none;
+    padding: 0px;
+    margin-left:0px;
 }
 
 /** Media queries **/

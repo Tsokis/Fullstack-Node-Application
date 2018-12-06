@@ -1,4 +1,4 @@
-
+// icon responsive navigation menu handler
     document.querySelector('.bar').addEventListener('click', (e) => {
         e.preventDefault();
         let nav = document.getElementById("nav");
