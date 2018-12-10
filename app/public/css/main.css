@@ -49,9 +49,9 @@ body {
     color: white;
     font-size: 1.3rem;
     margin-top: 50px;
-    /* position: fixed;
+    position: fixed;
     bottom: -1px;
-    left: 0px; */
+    left: 0px;
 }
 
 /** home header section style **/
@@ -107,7 +107,7 @@ body {
 
 /* Weather page styles */
 .icon {
-    width: 15%;
+    width: 35%;
 }
 .weatherCard {
     margin-left:50px;

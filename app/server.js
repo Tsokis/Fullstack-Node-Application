@@ -11,6 +11,7 @@ app.set('views', 'views');
 app.use(require('./routes/about'));
 app.use(require('./routes/home'));
 app.use(require('./routes/weather'));
+app.use(require('./routes/test'));
 // link to public folder
 app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({

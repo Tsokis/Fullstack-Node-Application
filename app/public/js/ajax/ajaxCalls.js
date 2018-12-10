@@ -1,5 +1,5 @@
-const appid='Your Api Key';
-axios.get('https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=' + appid)
+const appid ='enter your api key id';
+axios.get('https://api.openweathermap.org/data/2.5/weather?q=Larissa,gr&units=metric&appid=' + appid)
      .then((response) => {
          console.log(response);          
          console.log(response.data);
