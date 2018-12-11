@@ -1,4 +1,4 @@
-const appKey = 'enter you api key id';
+const appKey = 'enter your api key';
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
@@ -8,15 +8,12 @@ let temperature = document.getElementById("temp");
 let humidity = document.getElementById("humidity-div");
 let customError = document.getElementById("error");
 
-
-
 searchButton.addEventListener("click", fetchWeather);
 //ajax request to target api
 function fetchWeather(){
     if (searchInput.value === "") {
         customError.style.display = 'block';
-        customError.innerHTML = "<p>You must enter something</p>"
-        
+        customError.innerHTML = "<p>You must enter something</p>"        
     } else {
         customError.style.display = 'none';
         return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + searchInput.value + '&units=metric'+
