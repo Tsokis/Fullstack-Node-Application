@@ -1,4 +1,11 @@
 # Fullstack-Node-Application
-Init Structure   
-```npm install```   
-Run Server ```node server.js``` or ```nodemon server.js```
+ 
+```npm install```    
+
+cd app   
+
+Run Server 
+* ```node server.js```
+* ```nodemon server.js```
+
+Added mongoDB database,get and post method route,tested for now with postman
