@@ -2,9 +2,9 @@
  
 ```npm install```    
 
-cd app   
-
-Run Server 
+cd app/   
+and   
+Run the server with    
 * ```node server.js```
 * ```nodemon server.js```
 
