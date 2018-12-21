@@ -119,6 +119,9 @@ body {
 
 .bg2::after {
     background-image: url('/imgs/progr.png');
+    background-position: center;    
+    background-repeat: no-repeat;    
+    background-size: cover;    
 }
 
 /** about section style **/
@@ -140,10 +143,6 @@ body {
 flip card about page images
 */ 
 
-/* test */
-.test {
-    background-color: #4CAF50;
-}
 
 /* Weather page styles */
 .icon {

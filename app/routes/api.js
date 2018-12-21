@@ -10,8 +10,8 @@ apiController.use(bodyParser.urlencoded({
 
 apiController.get('/api', (req, res) => {
      Comments.find({}, (err, Comments) => {
-     res.json(Comments)
-     });    
+     res.json(Comments);
+     });
 });
 
 apiController.post('/api', (req, res) => {
