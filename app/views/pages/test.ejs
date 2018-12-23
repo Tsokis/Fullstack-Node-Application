@@ -6,7 +6,18 @@
         <h1>test</h1>
         <h2>ajax test from /api</h2>
         <div>
-            <ul class="test"></ul>
+            <form action="/api" method="POST">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="title" id="title"><br>
+                <label for="message">Message</label><br>
+                <textarea name="body" id="body" cols="20" rows="4" placeholder="enter a message"></textarea><br>
+                <!-- <input type="text" name="body" value="body" id="body"> -->
+                <label for="submitComment">Submit Comment</label>
+                <button id="button">Submit</button>                
+            </form>
+        </div>
+        <div>           
+            <ul class="test" id="test"></ul>
         </div>
 </div>
 
