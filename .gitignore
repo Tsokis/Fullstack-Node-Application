@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 text.txt
 /app/config.js
+/app/public/imgs/

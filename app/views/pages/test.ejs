@@ -6,11 +6,14 @@
         <h1>test</h1>
         <h2>ajax test from /api</h2>
         <div>
-            <form action="/api" method="POST">
+            <form action="/api" method="POST" name="commentForm">
+                <div id="error"></div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="enter a name" id="name" required><br>
                 <label for="title">Title</label>
-                <input type="text" name="title" placeholder="title" id="title"><br>
+                <input type="text" name="title" placeholder="title" id="title" required><br>
                 <label for="message">Message</label><br>
-                <textarea name="body" id="body" cols="20" rows="4" placeholder="enter a message"></textarea><br>
+                <textarea name="body" id="body" cols="20" rows="4" placeholder="enter a message" required></textarea><br>
                 <!-- <input type="text" name="body" value="body" id="body"> -->
                 <label for="submitComment">Submit Comment</label>
                 <button id="button">Submit</button>                

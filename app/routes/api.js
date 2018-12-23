@@ -35,7 +35,7 @@ apiController.get('/api/contact', async (req, res) => {
 
 //post contact data
 apiController.post('/api/contact', async (req, res) => {
-    let contact = await new Contact(req.body);
+    let contact = await new Contact(req.body);    
     contact.save();
     // posting the json
     res.status(201).send(contact);     
