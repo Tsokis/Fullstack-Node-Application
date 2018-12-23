@@ -3,7 +3,7 @@ const app = express();
 //env vars
 const config = require('./config');
 //mongoose 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 //template engine ejs
 app.set('view engine','ejs');
 //setting up views folder
