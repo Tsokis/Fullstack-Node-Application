@@ -12,7 +12,7 @@ function getData() {
         .catch(error => console.log(error));
 }
 
-// client post data and append to ul on button click
+// client post data and append li to ul on button click
 let button = document.getElementById('button').addEventListener('click', e =>{
     e.preventDefault();
     let title = document.getElementById("title");
@@ -20,7 +20,7 @@ let button = document.getElementById('button').addEventListener('click', e =>{
     let ul = document.getElementById("test");
     let li = document.createElement("li");    
     if (title.value && body.value===null){
-        document.body.innerHTML = "<h1>Fuck Cunt</h1>";
+        document.body.innerHTML = "<h1>F C</h1>";
     }else {
         axios.post('http://localhost:3002/api', {
                 title: title.value,

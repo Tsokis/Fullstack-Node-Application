@@ -1,4 +1,4 @@
-const appKey = 'enter your api key';
+const appKey = 'enter your appid';
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
