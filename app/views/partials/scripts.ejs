@@ -1,6 +1,18 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- <script type="text/javascript" src="/js/ajax/ajaxCalls.js"></script> -->
 <!-- <script type="text/javascript" src="/js/ajax/googlemaps.js"></script> -->
-<script type="text/javascript" src="/js/ajax/test-ajax.js"></script>
 <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=Your_Api_Key&callback=initMap">
 </script> -->
+<% if( pageID == "test" ) { %>
+<script type="text/javascript" src="/js/ajax/test-ajax.js"></script>
+<% } %>
+
+<% if( pageID == "tv-shows" ) { %>
+<script src="/js/ajax/tvshows.js"></script>
+<% } %>
+
+<% if( pageID == "weather" ) { %>
+<script src="/js/ajax/weather.js"></script>
+<% } %>
+
+

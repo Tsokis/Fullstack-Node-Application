@@ -3,7 +3,8 @@ const weatherController = express.Router();
 
 weatherController.get('/weather', function (req, res) {
     res.render('pages/weather', {
-        pageTitle: 'Check Weather'
+        pageTitle: 'Check Weather',
+        'pageID':'weather'
     });
 });
 

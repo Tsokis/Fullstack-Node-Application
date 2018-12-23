@@ -4,7 +4,8 @@ const testController = express.Router();
 
 testController.get('/test', function (req, res) {        
     res.render('pages/test', {
-        pageTitle: 'test',        
+        pageTitle: 'test', 
+        'pageID':'test'       
     });
 });
 

@@ -3,7 +3,8 @@ const homeController = express.Router();
 
 homeController.get('/', function (req, res) {
     res.render('pages/home', {
-        pageTitle: 'Home'
+        pageTitle: 'Home',
+        pageID: 'home'
     });
 });
 
