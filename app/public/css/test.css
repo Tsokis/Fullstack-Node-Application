@@ -1,0 +1,107 @@
+/*
+* test page style
+*/
+#error {
+    box-sizing: border-box;
+    background-color: #fb6277;
+    width: 12%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas:
+        "title title "
+        "box fetch-data";
+    box-sizing: border-box;
+}
+
+.title {
+    /* text-align: center; */
+    justify-self: center;
+    padding-top: 20px;
+    grid-area: title;
+    display: grid;
+}
+
+.box {
+    grid-area: box;
+    display: grid;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+}
+
+button {
+    background-color: #3F93AA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.fetch-data {
+    grid-area: fetch-data;
+    display: grid;
+}
+
+.test {
+    list-style-type: none;
+}
+
+/* test form style */
+input[type=text] {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: lightslategray;
+}
+
+input[type=text]::placeholder {
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: #577170;
+    outline: none;
+}
+
+textarea {
+    width: 99%;
+    outline: none;
+    overflow: auto;
+    background: lightslategray;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+textarea:focus {
+    background-color: #577170;
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas:
+            "title title "
+            "box box"
+            "fetch-data fetch-data";
+        box-sizing: border-box;
+    }
+}

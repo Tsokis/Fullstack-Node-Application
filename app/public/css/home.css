@@ -1,0 +1,12 @@
+/**
+ *home page style
+**/
+canvas {
+    /* margin-left:10rem; */
+    width: 70rem;
+}
+
+.home {
+    margin-top: 9rem;
+    text-align: center
+}

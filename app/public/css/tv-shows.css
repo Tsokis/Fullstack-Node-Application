@@ -1,0 +1,24 @@
+/*
+* tv shows page style
+*/
+#search-show1 {
+    border-left: 6px solid green;
+    padding: 20px;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.style {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.output {
+    list-style-type: none;
+}
+
+.tv-shows {
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}

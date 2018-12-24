@@ -1,0 +1,20 @@
+/** about section style **/
+.about {
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+/* .item-1 {
+    grid-column: 2;
+    grid-row: 1;
+} */
+
+/* 
+flip card about page images
+*/
