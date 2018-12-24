@@ -2,10 +2,12 @@
 <% include ../partials/navMenu %>
 
 <body>    
-    <div>
-        <h1>test</h1>
+    <div class="grid-container">
+    <div class="title">
         <h2>ajax test from /api</h2>
-        <div>
+    </div>
+        <div class="box">
+            <h3>Send us a message</h3>
             <form action="/api" method="POST" name="commentForm">
                 <div id="error"></div>
                 <label for="name">Name</label>
@@ -14,15 +16,16 @@
                 <input type="text" name="title" placeholder="title" id="title" required><br>
                 <label for="message">Message</label><br>
                 <textarea name="body" id="body" cols="20" rows="4" placeholder="enter a message" required></textarea><br>
-                <!-- <input type="text" name="body" value="body" id="body"> -->
                 <label for="submitComment">Submit Comment</label>
                 <button id="button">Submit</button>                
             </form>
         </div>
-        <div>           
+        <div class="fetch-data">
+            <h3>Latest Feedback</h3>           
             <ul class="test" id="test"></ul>
         </div>
-</div>
+    </div>
+
 
 <% include ../partials/footer %>
 <% include ../partials/domscripts %>   
