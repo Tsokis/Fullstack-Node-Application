@@ -1,0 +1,32 @@
+<% include ../partials/headexta %>
+<% include ../partials/navMenu %>
+
+<body>  
+    <div class="container">
+        <p class="error"></p>
+        <h3 class="success"></h3>
+        <form action="/api/contact" method="POST" class="form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="enter your last name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" value="Submit">                
+            </div>                   
+        </form>
+    </div>
+    
+</body>
+
+<% include ../partials/footer %>
+<% include ../partials/domscripts %>
+<% include ../partials/scripts %>
+<% include ../partials/closehtml %>
