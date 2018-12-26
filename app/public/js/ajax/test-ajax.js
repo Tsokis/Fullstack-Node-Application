@@ -1,4 +1,4 @@
-//Fetch data from models/Comments
+//Fetch data from models/Comments function
 function getData() {
     fetch('http://localhost:3002/api')
     .then(response => response.json())
@@ -6,12 +6,12 @@ function getData() {
         //select css class .test [for the output]
         let test = document.querySelector('.test');
         data.forEach(value => {
-            test.innerHTML += `<li>${value.title} <strong>${value.name}</strong> said: ${value.body}</li>`;
+            test.innerHTML += `<li>For the ${value.title} subject <strong>${value.name}</strong> said: ${value.body}</li>`;
         });
     })
     .catch(error => console.log(error));
 }
-
+// DOM EVENT
 // client post data and append li to ul on button click and reset fields
 let button = document.getElementById('button').addEventListener('click', e =>{
     e.preventDefault();    
@@ -19,7 +19,8 @@ let button = document.getElementById('button').addEventListener('click', e =>{
     let title = document.getElementById("title");
     let body = document.getElementById("body");     
     let ul = document.getElementById("test");
-    let li = document.createElement("li");  
+    let li = document.createElement("li");
+    li.setAttribute("class","testli")
     let error = document.getElementById("error");
     error.style.display = 'none';      
     if (name.value || title.value || body.value !==""){
@@ -46,6 +47,10 @@ let button = document.getElementById('button').addEventListener('click', e =>{
         error.style.display = "block";
         error.innerHTML = `<strong>you must enter the fields</strong>`;
     } 
+    // hide error message after 3 seconds
+    setTimeout(()=>{
+        error.style.display = 'none';
+    },3000);
 });
 
 getData();

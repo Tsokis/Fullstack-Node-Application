@@ -3,8 +3,8 @@
 */
 #error {
     box-sizing: border-box;
-    background-color: #fb6277;
-    width: 12%;
+    background-color: #fbac62;
+    width: 35%;
     padding-left: 20px;
     margin-bottom: 10px;
 }
@@ -18,6 +18,7 @@
         "title title "
         "box fetch-data";
     box-sizing: border-box;
+    margin-top:20px;
 }
 
 .title {
@@ -26,6 +27,7 @@
     padding-top: 20px;
     grid-area: title;
     display: grid;
+    background-color: #b398f6;
 }
 
 .box {
@@ -51,8 +53,11 @@ button:hover {
 }
 
 .fetch-data {
+    margin: 0px;
+    padding: 0px;
     grid-area: fetch-data;
     display: grid;
+    background-color: #d0d0ff;
 }
 
 .test {
@@ -92,12 +97,30 @@ textarea::placeholder {
 textarea:focus {
     background-color: #577170;
 }
+.t {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* .testcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.testcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+.testli:nth-child(even){
+    background-color: blueviolet;
+}
+.testli:nth-child(odd) {
+    background-color: seagreen;
+}
 @media screen and (max-width: 600px) {
     .grid-container {
         display: grid;
         grid-gap: 0px;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
             "title title "
             "box box"
