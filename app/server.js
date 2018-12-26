@@ -15,6 +15,7 @@ app.use(require('./routes/weather'));
 app.use(require('./routes/test'));
 app.use(require('./routes/tvshows'));
 app.use(require('./routes/api'));
+app.use(require('./routes/contact'));
 // link to public folder
 app.use(express.static('./public'));
 // Run server
