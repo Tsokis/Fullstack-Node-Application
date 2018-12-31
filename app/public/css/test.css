@@ -58,6 +58,9 @@ button:hover {
     grid-area: fetch-data;
     display: grid;
     background-color: #d0d0ff;
+    width: 100%;
+    height: 50vh;
+    overflow: scroll;
 }
 
 .test {
