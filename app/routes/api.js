@@ -24,7 +24,6 @@ apiController.post('/api',async (req, res) => {
     //redirect to test.ejs page after commit to the database
     res.redirect('test');     
 });
-
 //get contact data
 apiController.get('/api/contact', async (req, res) => {
     let contactData = await Contact.find({}, (err, Contact) => {
@@ -34,11 +33,11 @@ apiController.get('/api/contact', async (req, res) => {
 });
 
 //post contact data
-apiController.post('/api/contact', async (req, res) => {
-    let contact = await new Contact(req.body);    
+apiController.post('/api/contact',async (req, res) => {
+    let contact = await new Contact(req.body);   
     contact.save();
     // posting the json
-    res.status(201).send(contact);    
+    res.status(201).send(contact);       
 });
 
 module.exports = apiController;
