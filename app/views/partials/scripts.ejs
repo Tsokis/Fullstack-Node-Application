@@ -1,4 +1,5 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
 <!-- <script type="text/javascript" src="/js/ajax/ajaxCalls.js"></script> -->
 <!-- <script type="text/javascript" src="/js/ajax/googlemaps.js"></script> -->
 <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=Your_Api_Key&callback=initMap">
@@ -13,6 +14,9 @@
 
 <% if( pageID == "weather" ) { %>
 <script src="/js/ajax/weather.js"></script>
+<% } %>
+<% if( pageID == "chat" ) { %>
+<script src="/js/chat/chat.js"></script>
 <% } %>
 
 
