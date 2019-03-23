@@ -1,0 +1,65 @@
+
+.container{
+   margin-top: 550px;
+}
+.chat{
+     width: 100%;
+     display: flex;
+     box-sizing: border-box;
+     padding: 0.25rem;
+ }
+
+ .input {
+     border: 0;
+     padding: 0.5rem;
+     width: 100%;
+     outline: 0;
+     margin-right: 0.5rem;
+     border-radius: 0.25rem;
+     background: #ccc;
+ }
+
+.btn {
+     width: 6rem;
+     background-color: #1b8c00;
+     color: white;
+     border: none;
+     padding: 0.5rem;
+     cursor: pointer;
+     border-radius: 0.25rem;
+     text-transform: uppercase;
+ }
+
+.btn:hover {
+     background-color: #166d01;
+ }
+
+ .messages {
+     color: black;
+     margin: 0;
+     padding: 0;
+     margin-top: 30px;
+     margin-bottom: 3rem;
+ }
+
+ .messages li {
+     color: black;
+     padding: 0.5rem;
+ }
+
+ .messages li:nth-child(odd) {
+     color: black;
+     background-color: gray;
+ }
+ .messages li:nth-child(even) {
+     color: white;
+     background-color: lightgray;
+ }
+ .appended-message{
+     text-align: center;
+     margin-top: 50px;
+     width: 30%;
+     background-color: darkgray;
+     color: white;
+     display: block;
+ }
